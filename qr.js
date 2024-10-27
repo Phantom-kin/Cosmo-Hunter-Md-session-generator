@@ -59,19 +59,18 @@ router.get('/', async (req, res) => {
 				   let session = await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id, { text: "" + b64data });
 	
 				   let SIGMA_MD_TEXT = `
-┏━━━━━━━━━━━━━━
-┃QUEEN_ANITA_V2 SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ DAVID CYRIL ⚡𖥘
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❸ || Owner = https://t.me/deecee_x
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©*2024-2099 David Cyril*
+══════◇════════
+║ *Cosmo-Hunter*       ║
+                                    
+
+*_Pair Code Successful Connected 🐦‍🔥_*
+
+* _Above is your SESSION_ID🙄🥱 use it to deploy all of Phantom's bots_
+
+*NB:* _*DO NOT SHARE YOUR SESSION_ID WITH ANYONE... SHARE AT YOUR OWN RISK💀*_
+╚══════════╝
+
+> 𝕻𝖍𝖆𝖓𝖙𝖔𝖒
        `
 	 await Qr_Code_By_Maher_Zubair.sendMessage(Qr_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
 
