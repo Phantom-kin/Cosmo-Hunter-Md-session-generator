@@ -54,25 +54,26 @@ router.get('/', async (req, res) => {
                 let data = fs.readFileSync(__dirname + `/temp/${id}/creds.json`);
                 await delay(800);
                let b64data = Buffer.from(data).toString('base64');
-               let session = await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id, { text: "" + b64data });
+               let session = await Pair_Code_By_Phantom.sendMessage(Pair_Code_By_Phantom.user.id, { text: "" + b64data });
 
                let SIGMA_MD_TEXT = `
-┏━━━━━━━━━━━━━━
-┃QUEEN_ANITA_V2 SESSION IS 
-┃SUCCESSFULLY
-┃CONNECTED ✅🔥
-┗━━━━━━━━━━━━━━━
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❶ || Creator = 𖥘⚡ DAVID CYRIL ⚡𖥘
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-❷ || WhattsApp Channel = https://whatsapp.com/channel/0029VaeRru3ADTOEKPCPom0L 
-▬▬▬▬▬▬▬▬▬▬▬▬▬▬
-©*2024-2099 David Cyril*`
- await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Maher_Zubair.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
+══════◇════════
+║ *Cosmo-Hunter*       ║
+                                    
+
+*_Pair Code Successful Connected 🐦‍🔥_*
+
+* _Above is your SESSION_ID🙄🥱 use it to deploy all of Phantom's bots_
+
+*NB:* _*DO NOT SHARE YOUR SESSION_ID WITH ANYONE... SHARE AT YOUR OWN RISK💀*_
+╚══════════╝
+
+> 𝕻𝖍𝖆𝖓𝖙𝖔𝖒`
+ await Pair_Code_By_Maher_Zubair.sendMessage(Pair_Code_By_Phantom.user.id,{text:SIGMA_MD_TEXT},{quoted:session})
  
 
         await delay(100);
-        await Pair_Code_By_Maher_Zubair.ws.close();
+        await Pair_Code_By_Phantom.ws.close();
         return await removeFile('./temp/'+id);
             } else if (connection === "close" && lastDisconnect && lastDisconnect.error && lastDisconnect.error.output.statusCode != 401) {
                     await delay(10000);
